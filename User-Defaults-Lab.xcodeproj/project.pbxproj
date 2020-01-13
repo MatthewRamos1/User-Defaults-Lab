@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		0C602F7B23CD024A00108DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C602F7923CD024A00108DD3 /* Main.storyboard */; };
 		0C602F7D23CD024B00108DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C602F7C23CD024B00108DD3 /* Assets.xcassets */; };
 		0C602F8023CD024B00108DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C602F7E23CD024B00108DD3 /* LaunchScreen.storyboard */; };
+		0C602F8923CD05F000108DD3 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0C602F8823CD05F000108DD3 /* ImageKit */; };
+		0C602F8B23CD07F800108DD3 /* HoroscopeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F8A23CD07F800108DD3 /* HoroscopeData.swift */; };
+		0C602F8D23CD093F00108DD3 /* HoroscopeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F8C23CD093F00108DD3 /* HoroscopeAPIClient.swift */; };
+		0C602F8F23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F8E23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		0C602F7C23CD024B00108DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C602F7F23CD024B00108DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C602F8123CD024B00108DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C602F8A23CD07F800108DD3 /* HoroscopeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeData.swift; sourceTree = "<group>"; };
+		0C602F8C23CD093F00108DD3 /* HoroscopeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeAPIClient.swift; sourceTree = "<group>"; };
+		0C602F8E23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeSelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C602F8923CD05F000108DD3 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +67,10 @@
 				0C602F7323CD024A00108DD3 /* AppDelegate.swift */,
 				0C602F7523CD024A00108DD3 /* SceneDelegate.swift */,
 				0C602F7723CD024A00108DD3 /* ViewController.swift */,
+				0C602F8E23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift */,
 				0C602F7923CD024A00108DD3 /* Main.storyboard */,
+				0C602F8A23CD07F800108DD3 /* HoroscopeData.swift */,
+				0C602F8C23CD093F00108DD3 /* HoroscopeAPIClient.swift */,
 				0C602F7C23CD024B00108DD3 /* Assets.xcassets */,
 				0C602F7E23CD024B00108DD3 /* LaunchScreen.storyboard */,
 				0C602F8123CD024B00108DD3 /* Info.plist */,
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = "User-Defaults-Lab";
+			packageProductDependencies = (
+				0C602F8823CD05F000108DD3 /* ImageKit */,
+			);
 			productName = "User-Defaults-Lab";
 			productReference = 0C602F7023CD024A00108DD3 /* User-Defaults-Lab.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 0C602F6723CD024A00108DD3;
+			packageReferences = (
+				0C602F8723CD05F000108DD3 /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 0C602F7123CD024A00108DD3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C602F7823CD024A00108DD3 /* ViewController.swift in Sources */,
+				0C602F8F23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift in Sources */,
+				0C602F8D23CD093F00108DD3 /* HoroscopeAPIClient.swift in Sources */,
 				0C602F7423CD024A00108DD3 /* AppDelegate.swift in Sources */,
+				0C602F8B23CD07F800108DD3 /* HoroscopeData.swift in Sources */,
 				0C602F7623CD024A00108DD3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +358,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C602F8723CD05F000108DD3 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C602F8823CD05F000108DD3 /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C602F8723CD05F000108DD3 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0C602F6823CD024A00108DD3 /* Project object */;
 }
