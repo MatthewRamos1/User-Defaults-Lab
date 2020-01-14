@@ -14,12 +14,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
         
     }
     
     func updateUI() {
         let todaysHoroscope = UserHoroscope.shared.getSelectedHoroscope()
-        
+        horoscopeText.text = todaysHoroscope
     }
 
 }
