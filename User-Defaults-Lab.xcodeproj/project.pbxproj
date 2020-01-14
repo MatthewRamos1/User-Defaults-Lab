@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4CB89923CE523D007D277F /* UIViewController + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4CB89823CE523D007D277F /* UIViewController + Alerts.swift */; };
 		0C602F7423CD024A00108DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F7323CD024A00108DD3 /* AppDelegate.swift */; };
 		0C602F7623CD024A00108DD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F7523CD024A00108DD3 /* SceneDelegate.swift */; };
 		0C602F7823CD024A00108DD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F7723CD024A00108DD3 /* ViewController.swift */; };
@@ -17,9 +18,11 @@
 		0C602F8B23CD07F800108DD3 /* HoroscopeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F8A23CD07F800108DD3 /* HoroscopeData.swift */; };
 		0C602F8D23CD093F00108DD3 /* HoroscopeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F8C23CD093F00108DD3 /* HoroscopeAPIClient.swift */; };
 		0C602F8F23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F8E23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift */; };
+		0C602F9123CD216500108DD3 /* SelectedHoroscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C602F9023CD216500108DD3 /* SelectedHoroscope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C4CB89823CE523D007D277F /* UIViewController + Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alerts.swift"; sourceTree = "<group>"; };
 		0C602F7023CD024A00108DD3 /* User-Defaults-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "User-Defaults-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C602F7323CD024A00108DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C602F7523CD024A00108DD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		0C602F8A23CD07F800108DD3 /* HoroscopeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeData.swift; sourceTree = "<group>"; };
 		0C602F8C23CD093F00108DD3 /* HoroscopeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeAPIClient.swift; sourceTree = "<group>"; };
 		0C602F8E23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeSelectViewController.swift; sourceTree = "<group>"; };
+		0C602F9023CD216500108DD3 /* SelectedHoroscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedHoroscope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		0C602F7223CD024A00108DD3 /* User-Defaults-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				0C602F9023CD216500108DD3 /* SelectedHoroscope.swift */,
 				0C602F7323CD024A00108DD3 /* AppDelegate.swift */,
 				0C602F7523CD024A00108DD3 /* SceneDelegate.swift */,
 				0C602F7723CD024A00108DD3 /* ViewController.swift */,
@@ -74,6 +79,7 @@
 				0C602F7C23CD024B00108DD3 /* Assets.xcassets */,
 				0C602F7E23CD024B00108DD3 /* LaunchScreen.storyboard */,
 				0C602F8123CD024B00108DD3 /* Info.plist */,
+				0C4CB89823CE523D007D277F /* UIViewController + Alerts.swift */,
 			);
 			path = "User-Defaults-Lab";
 			sourceTree = "<group>";
@@ -158,7 +164,9 @@
 				0C602F7823CD024A00108DD3 /* ViewController.swift in Sources */,
 				0C602F8F23CD0DDF00108DD3 /* HoroscopeSelectViewController.swift in Sources */,
 				0C602F8D23CD093F00108DD3 /* HoroscopeAPIClient.swift in Sources */,
+				0C602F9123CD216500108DD3 /* SelectedHoroscope.swift in Sources */,
 				0C602F7423CD024A00108DD3 /* AppDelegate.swift in Sources */,
+				0C4CB89923CE523D007D277F /* UIViewController + Alerts.swift in Sources */,
 				0C602F8B23CD07F800108DD3 /* HoroscopeData.swift in Sources */,
 				0C602F7623CD024A00108DD3 /* SceneDelegate.swift in Sources */,
 			);
