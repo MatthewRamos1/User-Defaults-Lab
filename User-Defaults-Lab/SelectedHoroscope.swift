@@ -15,6 +15,7 @@ class UserHoroscope {
     
     struct SavedHoroscope {
         static let horoscope = "Horoscope"
+        static let userName = "Name"
     }
     
     func updateSelectedHoroscope (horoscope: Horoscope) {
@@ -28,5 +29,15 @@ class UserHoroscope {
         return selectedHoroscope
     }
     
+    func updateUserName (name: String) {
+        standard.set(name, forKey: SavedHoroscope.userName)
+    }
+    
+    func getUserName () -> String? {
+        guard let userName = UserDefaults.standard.object(forKey: SavedHoroscope.userName) as? String else {
+            return nil
+        }
+        return userName
+    }
     
 }
