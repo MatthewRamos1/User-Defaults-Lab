@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        updateUI()
+    }
+    
     func updateUI() {
         let todaysHoroscope = UserHoroscope.shared.getSelectedHoroscope()
         horoscopeText.text = todaysHoroscope
