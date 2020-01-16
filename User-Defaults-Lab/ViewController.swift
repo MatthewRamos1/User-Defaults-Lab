@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     func updateUI() {
         guard let todaysHoroscope = UserHoroscope.shared.getSelectedHoroscope(), let userName = UserHoroscope.shared.getUserName() else {
-            horoscopeText.text = "Enter name and select star sign."
+            showAlert(title: "Missing Data", message: "Please select star sign and enter name in text field")
             return
         }
         horoscopeText.text = userName + ":    " + todaysHoroscope
